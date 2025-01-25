@@ -1,0 +1,3 @@
+# Lua pairs iterator issue with nested tables
+
+This repository demonstrates a subtle bug in Lua related to the `pairs` iterator when used with nested tables that are modified during iteration.  The provided `foo` function recursively iterates through a nested table, but if the table's structure is altered while the iteration is in progress, elements might be skipped, leading to unexpected behavior. The solution demonstrates how to safely handle such cases to avoid missing entries.
